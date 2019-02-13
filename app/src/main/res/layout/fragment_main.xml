@@ -5,37 +5,63 @@
     android:layout_height="match_parent"
     tools:context=".MainFragment">
 
-  <!--content-->
-   <LinearLayout
-       android:layout_margin="30dp"
-       android:orientation="vertical"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
 
-       <!--logo-->
-       <ImageView
-           android:layout_gravity="center_horizontal"
-           android:src="@drawable/logo1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
+        <!--logo-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo1" />
 
-       <!--App name-->
-       <TextView
-           android:layout_marginTop="10dp"
-           android:textStyle="bold"
-           android:textSize="24sp"
-           android:layout_gravity="center_horizontal"
-           android:text="@string/app_name"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
+        <!--App name-->
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-       <!--User-->
+        <!--User-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User:"
+            android:inputType="text" />
 
-       <!--Password-->
+        <!--Password-->
+        <EditText
 
-       <!--Login-->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password:"
+            android:inputType="textPassword" />
 
-       <!--New Register-->
-   </LinearLayout>
+        <!--Login-->
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--New Register-->
+        <TextView
+            android:id="@+id/txtNewRegister"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </FrameLayout>
